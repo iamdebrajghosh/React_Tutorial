@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import config from "../config/config";
 import { Client, ID, Account, Databases, Storage, Query } from "appwrite";
 
@@ -28,7 +29,7 @@ export class AppwriteService {
                 }
             );
         } catch (error) {
-            console.log("Appwrite serive :: createPost :: error", error);
+            //console.log("Appwrite serive :: createPost :: error", error);
         }
     }
 
@@ -58,7 +59,7 @@ export class AppwriteService {
             );
             return true;
         } catch (error) {
-            console.log("Appwrite serive :: deletePost :: error", error);
+            //console.log("Appwrite serive :: deletePost :: error", error);
             return false;
         }
     }
@@ -71,7 +72,7 @@ export class AppwriteService {
                 slug
             );
         } catch (error) {
-            console.log("Appwrite serive :: getPost :: error", error);
+            //console.log("Appwrite serive :: getPost :: error", error);
             return false;
         }
     }
@@ -84,7 +85,7 @@ export class AppwriteService {
                 queries
             );
         } catch (error) {
-            console.log("Appwrite serive :: getPosts :: error", error);
+            //console.log("Appwrite serive :: getPosts :: error", error);
             return false;
         }
     }
@@ -97,7 +98,7 @@ export class AppwriteService {
                 file
             );
         } catch (error) {
-            console.log("Appwrite serive :: uploadFile :: error", error);
+            //console.log("Appwrite serive :: uploadFile :: error", error);
             return false;
         }
     }
@@ -110,7 +111,7 @@ export class AppwriteService {
             );
             return true;
         } catch (error) {
-            console.log("Appwrite serive :: deleteFile :: error", error);
+           // console.log("Appwrite serive :: deleteFile :: error", error);
             return false;
         }
     }

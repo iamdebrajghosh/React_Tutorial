@@ -29,7 +29,7 @@ function Home() {
             <Container>
                 <div className='grid grid-cols-3 gap-4'>
                     {posts.map((post) => (
-                        <PostCard key={post.$id} post={post} />
+                        <PostCard {...post} />
                     ))}
                 </div>
             </Container>

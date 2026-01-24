@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import config from '../config/config'
 
 import { Client, Account, ID } from "appwrite";
@@ -21,7 +22,7 @@ export class AppwriteService {
                 return userAccount;
             }
         } catch (error) {
-            console.log(error);
+            //console.log(error);
             return false;
         }
     }
@@ -31,7 +32,7 @@ export class AppwriteService {
             await this.account.createEmailSession(email, password);
             return true;
         } catch (error) {
-            console.log(error);
+            //console.log(error);
             return false;
         }
     }
@@ -40,7 +41,7 @@ export class AppwriteService {
         try {
             return await this.account.get();
         } catch (error) {
-            console.log(error);
+            //console.log(error);
             return false;
         }
     }
@@ -50,7 +51,7 @@ export class AppwriteService {
             await this.account.deleteSessions();
             return true;
         } catch (error) {
-            console.log(error);
+            //console.log(error);
             return false;
         }
     }
